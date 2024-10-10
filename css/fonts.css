@@ -1,0 +1,60 @@
+@font-face {
+    font-weight: 400;
+    font-family: Arial;
+    src: url("../fonts/ARIAL.TTF");
+  }
+  
+  @font-face {
+    font-weight: 700; 
+    font-family: Arial;
+    src: url("../fonts/ARIALBD.TTF");
+  }
+  
+  @font-face {
+    font-weight: 500;
+    font-family: Arial;
+    src: url("../fonts/ARIALBLACKITALIC.TTF");
+  }
+
+  @font-face {
+    font-weight: 400;
+    font-family: Impact;
+    src: url("../fonts/Impact.ttf");
+  }
+
+  /*Container*/
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+body {
+  background-color: #00bfff;
+  font-family: Arial;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 990px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 320px;
+    }
+}
+
