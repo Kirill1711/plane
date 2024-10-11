@@ -1,4 +1,11 @@
 
+.introduction h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 1em;
+}
 .introduction__wrapper {
     padding: 1em;
     margin: 1.5em 0 1.5em 0;
@@ -51,6 +58,9 @@
     .introduction__wrapper img {
         width: 370px;
         height: 200px;
+    }
+    .introduction h2 {
+        font-size: 24px;
     }
 }
 
