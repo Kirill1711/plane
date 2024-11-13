@@ -1,0 +1,110 @@
+.avia-history__warapper h1 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.avia-history__warapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    background-color: #98e5fe;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #000000;
+    padding: 1em;
+}
+.avia-history__warapper p {
+    margin: 0.5em;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.avia-history__warapper div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.avia-history__warapper div img {
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 0.5em 0;
+}
+
+.anima_item-down {
+    transform: translate(0px, 50px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.anima_item-left {
+    transform: translate(-50px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.anima_item-right {
+    transform: translate(50px, 0px);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.anima_item-increase {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.show_item {
+    transform: translate(0px, 0px);
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .avia-history__warapper div {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .avia-history__title {
+        font-size: 30px;
+    }
+    .avia-history__warapper div {
+        gap: 1em;
+    }
+    .avia-history__warapper div img {
+        width: 300px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .avia-history__warapper p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .avia-history__warapper {
+        width: 300px;
+        margin: 0 0 1em 0;
+    }
+    .avia-history__title {
+        font-size: 24px;
+    }
+    .avia-history__warapper p {
+        font-size: 16px;
+    }
+    .avia-history__warapper div{
+        flex-direction: column;
+        margin: 0.5em 0;
+        gap: 10px;
+    }
+    .avia-history__warapper div:nth-child(2), .avia-history__warapper div:nth-child(4){
+        flex-direction: column-reverse;
+    }
+}

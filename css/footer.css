@@ -1,0 +1,117 @@
+.footer {
+    margin: auto;
+    background-color: #98e5fe;
+    width: 100%;
+    height: 100%;
+}
+.footer__wrapper {
+    margin: auto;
+    width: 1100px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    padding: 1em 0; 
+}
+.footer__inner{
+    color: #000000;
+    font-size: 22px;
+}
+
+.footer__inner a:hover {
+    color:#ee1423;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact div {
+    transition: all 1s;
+}
+.contact img:hover {
+    animation: animarotateY 1.5s ease-in-out infinite;
+}
+
+@keyframes animarotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+    10% {
+        transform: rotateY(36deg);
+    }
+    20% {
+        transform: rotateY(72deg);
+    }
+    30% {
+        transform: rotateY(108deg);
+    }
+    40% {
+        transform: rotateY(144deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    60% {
+        transform: rotateY(216deg);
+    }
+    70% {
+        transform: rotateY(252deg);
+    }
+    80% {
+        transform: rotateY(288deg);
+    }
+    90% {
+        transform: rotateY(324deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__wrapper {
+        width: 1000px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer__wrapper {
+        width: 950px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .footer__wrapper {
+        width: 768px;
+    }
+    .footer__inner {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer {
+        height: 100%;
+    }
+    .footer__wrapper {
+        width: 300px;
+        height: 280px;
+    }
+    .footer__wrapper p {
+        text-align: center;
+        margin: 0.5em;
+    }
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+    .footer__inner span {
+        display: none;
+    }
+
+}

@@ -1,0 +1,120 @@
+.catalog {
+    margin: 1em 0;
+}
+.catalog__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1100px;
+    border-radius: 25px;
+    background: linear-gradient(#00bfff, #fff);
+    height: 420px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #000;
+    align-items: center;
+}
+.catalog__wrapper h1 {
+    margin: 0 0 1em 0;
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.catalog__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+}
+.catalog__inner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    border: 2px dashed #2163ca;
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.catalog__inner div a {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0.5s;
+}
+.catalog__inner div a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.catalog__line {
+    margin-top: 1em;
+    width: 1100px;
+    height: 77px;
+    overflow: hidden;
+}
+
+.catalog__plane {
+    width: 70px;
+    height: 77px;
+    animation: fly 5s ease infinite;
+}
+
+@keyframes fly {
+ 0% {
+    margin-left: -60px;
+ }
+ 100% {
+    margin-left: 1150px;
+ }
+}
+
+@media screen and (max-width: 1200px) {
+    .catalog__wrapper {
+        width: 1024px;
+    }
+    .catalog__line {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog__wrapper {
+        width: 990px;
+    }
+    .catalog__wrapper h1 {
+        font-size: 26px;
+    }
+    .catalog__line{
+        width: 990px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .catalog__wrapper {
+        width: 768px;
+    }
+    .catalog__line {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .catalog__wrapper {
+        gap: 0.5em;
+        width: 320px;
+        height: 630px;
+    }
+    .catalog__inner {
+        flex-direction: column;
+    }
+    .catalog__wrapper h1 {
+        margin: 0.5em 0;    
+    }
+    .catalog__line {
+        width: 320px;
+    }
+}
